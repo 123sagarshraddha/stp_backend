@@ -5,7 +5,7 @@ import Header from './Header'
 export default function Layout({ children }) {
     return (
         <>
-            <Sidebar/>
+            <Sidebar />
             <Header />
             <main className="main-content">
                 {children}

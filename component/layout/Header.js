@@ -34,7 +34,7 @@ export default function Header() {
                         </li>
                         <li className="ms-1">
                             <span className="btn-topbar">
-                                <Image src={svg} width="25" height="25" className="rounded" style={{ color: "transparent" }}></Image>
+                                <Image src={svg} width="25" height="25" className="rounded" style={{ color: "transparent" }} alt='svg'></Image>
                               
                             </span>
                         </li>
@@ -75,7 +75,7 @@ export default function Header() {
                         </li>
                         <div className="user ms-sm-3 position-relative">
                             <button type="button" className="UserBtn btn btn-link">
-                                <Image src={profile} width="32" height="32" className="rounded-circle" style={{ color: "transparent" }} />
+                                <Image src={profile} alt='profile' width="32" height="32" className="rounded-circle" style={{ color: "transparent" }} />
                                 <span className="text-start ms-xl-2">
                                     <span className=" d-xl-inline-block ms-1 fw-500 user-name-text"> Sagar Shraddha
                                     </span>

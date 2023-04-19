@@ -1,16 +1,13 @@
-import Image from "next/image";
-import { Icon } from '@iconify/react';
 
+import { Icon } from "@iconify/react";
 import Link from "next/link";
+
 
 
 export default function DashBord({ children }) {
 
     return (
         <>
-
-
-
 
             <div className="container-fluid">
                 <div className="Dashboard row">
@@ -50,6 +47,7 @@ export default function DashBord({ children }) {
                                                 </div>
                                                 <div className="avatar-sm flex-shrink-0">
                                                     <span className="bg-soft-success avatar-title rounded fs-3">
+                                                    <Icon icon="solar:chat-round-money-bold-duotone" color="#495057" width="25" height="25" />
 
                                                     </span>
                                                 </div>
@@ -75,8 +73,8 @@ export default function DashBord({ children }) {
                                                 </div>
                                                 <div className="avatar-sm flex-shrink-0">
                                                     <span className="bg-soft-info avatar-title rounded fs-3">
-
-                                                    </span>
+                                                    <Icon icon="ph:bag-duotone" color="#495057" width="25" height="25" />
+                                                </span>
                                                 </div>
                                             </div>
                                         </div>
@@ -100,6 +98,7 @@ export default function DashBord({ children }) {
                                                 </div>
                                                 <div className="avatar-sm flex-shrink-0">
                                                     <span className="bg-soft-info avatar-title rounded fs-3">
+                                                    <Icon icon="healthicons:ui-user-profile" color="#495057" width="25" height="25" />
 
                                                     </span>
                                                 </div>
@@ -125,6 +124,8 @@ export default function DashBord({ children }) {
                                                 </div>
                                                 <div className="avatar-sm flex-shrink-0">
                                                     <span className="bg-soft-info avatar-title rounded fs-3">
+
+                                                    <Icon icon="solar:chat-round-money-bold-duotone" color="#495057" width="25" height="25" />
 
 
                                                     </span>

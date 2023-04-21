@@ -1,0 +1,38 @@
+[
+    {
+        "id":2,
+         "partner type":"driver",
+         "email":"abc@gmail.com",
+         "phone_no":"90909090909",
+         "address":"baroda ",
+         "service provider":"delivery"
+
+    },
+    {
+        "id":3,
+         "partner type":"driver",
+         "email":"abc@gmail.com",
+         "phone_no":"90909090909",
+         "address":"baroda ",
+         "service provider":"delivery"
+
+    },
+    {
+        "id":4,
+         "partner type":"driver",
+         "email":"abc@gmail.com",
+         "phone_no":"90909090909",
+         "address":"baroda ",
+         "service provider":"delivery"
+
+    },
+    {
+        "id":5,
+         "partner type":"driver",
+         "email":"abc@gmail.com",
+         "phone_no":"90909090909",
+         "address":"baroda ",
+         "service provider":"delivery"
+
+    }
+]

@@ -1,0 +1,69 @@
+[
+    {
+        "id":1,
+        "firstname":"Sagar",
+        "lastname":"Shraddha",
+        "email":"sagar@123.com",
+        "phone_no":"9327499332",
+        
+        "address":"Near railway station , Himmatnagr , gujarat",
+        "location":"Himmatnagar",
+        "status":"active"
+    },
+    {
+        "id":2,
+        "firstname":"Sagar",
+        "lastname":"amar",
+        "email":"amar@123.com",
+        "phone_no":"8587499332",
+       
+        "address":"Near Post Office ,Mahavirnagar, gujarat",
+        "location":"Mahavirnagar",
+        "status":"inactive"
+    },
+    {
+        "id":3,
+        "firstname":"Patel",
+        "lastname":"darsh",
+        "email":"darsh@123.com",
+        "phone_no":"7656499332",
+      
+        "address":"Near Himaliya mall  , vastrapur , gujarat",
+        "location":"vastrapur",
+        "status":"active"
+    },
+    {
+        "id":4,
+        "firstname":"bhatt",
+        "lastname":"Darshit",
+        "email":"Darshit@123.com",
+        "phone_no":"6567499332",
+     
+        "address":"Manjalpur , baroda, gujarat",
+        "location":"Baroda",
+        "status":"active"
+    },
+    {
+        "id":5,
+        "firstname":"Sagar",
+        "lastname":"Shraddha",
+        "email":"sagar@123.com",
+        "phone_no":"9327499332",
+      
+        "address":"Near railway station , Himmatnagr , gujarat",
+        "location":"Himmatnagar",
+        "status":"active"
+    },
+    {
+        "id":6,
+        "firstname":"Sagar",
+        "lastname":"Shraddha",
+        "email":"sagar@123.com",
+        "phone_no":"9327499332",
+      
+        "address":"Near railway station , Himmatnagr , gujarat",
+        "location":"Himmatnagar",
+        "status":"active"
+    }
+    
+]

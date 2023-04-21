@@ -365,3 +365,9 @@ header .user .user-name-text {
     height: 3rem;
     width: 3rem;
 }
+
+.data{
+    margin-bottom: 16px;
+    margin-top: 5px;
+    margin-left:500px;
+}

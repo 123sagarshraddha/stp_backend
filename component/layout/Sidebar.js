@@ -3,6 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 import Logo from '../../assets/images/STP.png';
 import SidebarData from '../Json/SidebarData.json';
+import Link from 'next/link';
 export default function Sidebar() {
     return (
         <>
@@ -16,16 +17,18 @@ export default function Sidebar() {
                 </div>
                 <div className="navbar_inner">
                     <div className="navbarItem">
-                        {SidebarData.map((data) => {  
-                            
-                       
-
-                            return (<div className="nav-link">
-                                <Icon icon={data.icon} color="#adb5bd" width="20" height="20" />
-                            </div>)
+                        {SidebarData.map((data) => {
+                            console.log("data?.path",data?.Path)
+                            return (
+                                <Link href={data?.Path}>
+                                    <div className="nav-link">
+                                        <Icon icon={data.icon} color="#adb5bd" width="20" height="20" />
+                                    </div>
+                                </Link>)
                         })}
 
                     </div>
+
                 </div>
             </div>
         </>

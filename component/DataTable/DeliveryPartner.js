@@ -62,7 +62,7 @@ export default function Datatable() {
             selector: (row) => (
                 <>
                     <Button size="sm" color="primary" className="m-1" onClick={() => {
-                        router.push("//datatable/add")
+                        router.push("//delivery/add")
                     }}>
                         <Icon
                             icon="material-symbols:edit-outline"

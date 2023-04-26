@@ -62,7 +62,7 @@ export default function Datatable() {
             selector: (row) => (
                 <>
                     <Button size="sm" color="primary" className="m-1" onClick={() => {
-                        router.push("//datatable/add")
+                        router.push("//customer/add")
                     }}>
                         <Icon
                             icon="material-symbols:edit-outline"
@@ -96,6 +96,7 @@ export default function Datatable() {
             <div className="dataTable">
                 <DataTable
                     title="Customer Table"
+                
                     columns={columns}
                     data={data}
                     pagination

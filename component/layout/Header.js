@@ -3,10 +3,13 @@ import React from 'react'
 import svg from '../../assets/images/us.svg';
 import profile from '../../assets/images/profile.jpeg'
 import { Icon } from '@iconify/react';
-export default function Header() {
-  return (
-    <>
-         <header>
+import { Input } from 'reactstrap';
+
+export default function header() {
+    
+    return (
+        <>
+            <header>
                 <div className="navbar-header">
                     <div className="d-flex">
                         <div className="header-item  px-3">
@@ -35,7 +38,7 @@ export default function Header() {
                         <li className="ms-1">
                             <span className="btn-topbar">
                                 <Image src={svg} width="25" height="25" className="rounded" style={{ color: "transparent" }} alt='svg'></Image>
-                              
+
                             </span>
                         </li>
 
@@ -86,7 +89,8 @@ export default function Header() {
                         </div>
                     </div>
                 </div>
+               
             </header>
-    </>
-  )
+     </>
+    )
 }

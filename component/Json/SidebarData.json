@@ -1,29 +1,32 @@
 [
-    {
-      "Id": 1,
-      "icon": "material-symbols:dashboard-outline",
-       "Path": "/dashbord"
-      
-    },
-    {
-      "Id": 2,
-
-      "icon": "fluent-mdl2:party-leader",
-            "Path": "/admin"
-
-     
-    },
-    {
-      "Id": 3,
-      "icon": "mdi:face-agent",
-      "Path":"/customer"
-     
-    },
-    {
-      "Id": 4,
-      "icon": "mdi:delivery-dining",
-      "Path":"/delivery"
-      
-    }
-  ]
-    
+  {
+    "Id": 1,
+    "icon": "material-symbols:dashboard-outline",
+    "Path": "/dashbord"
+  },
+  {
+    "Id": 2,
+    "icon": "fluent-mdl2:party-leader",
+    "Path": "/admin"
+  },
+  {
+    "Id": 3,
+    "icon": "mdi:face-agent",
+    "Path": "/customer"
+  },
+  {
+    "Id": 4,
+    "icon": "mdi:delivery-dining-outline",
+    "Path": "/delivery"
+  },
+  {
+    "Id": 5,
+    "icon": "material-symbols:order-approve-rounded",
+    "Path": "/order"
+  },
+  {
+    "Id": 6,
+    "icon": "fluent:vehicle-truck-profile-24-regular",
+    "Path": "/vehicle"
+  }
+]

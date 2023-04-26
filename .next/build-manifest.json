@@ -30,20 +30,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/admin.js"
     ],
-    "/customer": [
+    "/admin/add": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/customer.js"
-    ],
-    "/dashbord": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/dashbord.js"
-    ],
-    "/delivery": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/delivery.js"
+      "static/chunks/pages/admin/add.js"
     ]
   },
   "ampFirstPages": []

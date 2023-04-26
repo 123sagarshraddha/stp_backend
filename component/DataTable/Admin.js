@@ -4,11 +4,14 @@ import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import DataTable from "react-data-table-component";
 import { Badge, Button } from "reactstrap";
+import admindata from '../Json/Admin.json'
 
 
 export default function Datatable() {
-    const router =useRouter()
-    const columns = [
+    const router = useRouter();
+    // console.log("data",admindata)
+
+      const columns = [
         {
             name: "id",
             selector: "id",
@@ -16,21 +19,21 @@ export default function Datatable() {
         },
         {
             name: "Username",
-            selector: "username",
+            selector: row => row.username,
             sortable: true,
         },
         {
-            name:"Email",
-            selector:"email",
-            sortable:true
+            name: "Email",
+            selector: row => row.email,
+            sortable: true
         },
-       
+
         {
-            name:"Phone_No",
-            selector:"phone_no",
-            sortable:true
+            name: "Phone_No",
+            selector: "phone_no",
+            sortable: true
         },
-      
+
 
         {
             name: <div className="justify-content-center d-flex w-100">Status </div>,
@@ -53,7 +56,7 @@ export default function Datatable() {
             selector: (row) => (
                 <>
                     <Button size="sm" color="primary" className="m-1" onClick={() => {
-                        router.push("//datatable/add")
+                        router.push("//admin/add")
                     }}>
                         <Icon
                             icon="material-symbols:edit-outline"
@@ -61,38 +64,51 @@ export default function Datatable() {
                             height={"18px"}
                         />
                     </Button>
-                    <Button size="sm" color="danger">
-                        <Icon icon="ion:trash-outline" width={"18px"} height={"18px"} />
-                    </Button>
+                    <Button size="sm" color="danger" className="m-1">
+
+
+                    <Icon
+                        icon="ion:trash-outline"
+                        width={"18px"}
+                        height={"18px"}
+                    />
+                </Button>
                 </>
             ),
-            style: {
-                justifyContent: "center",
+    style: {
+        justifyContent: "center",
             },
-            minWidth: "180px",
-            maxWidth: "180px",
+    minWidth: "180px",
+        maxWidth: "180px",
         },
     ];
     const [data, setData] = useState([]);
-    const fetchUsers = async (page) => {
-        const response = await axios.get(`http://127.0.0.1:5500/component/Json/Admin.json`);
-        setData(response.data);
-    };
+    //  const fetchUsers = async (page) => {
+    //  const response = await axios.get(`http://127.0.0.1:5500/component/Json/Admin.json`);
+    //  setData(response.data);
+    //  };
     useEffect(() => {
-        fetchUsers(1); // fetch page 1 of users
+        // axios.get('http://127.0.0.1:5500/component/Json/Admin.json')
+        //     .then(res => setData(res.data))
+        //     .catch(err => console.log(err))
+        // fetchUsers(1)
+        setData(admindata)
     }, []);
     return (
         <>
 
             <div className="dataTable">
-                <DataTable
-                    title="Admin Table"
-                    columns={columns}
-                    data={data}
-                    pagination
-                    highlightOnHover
-                />
-            </div>
+                <DataTable 
+                  title="Admin"
+                  columns={columns}
+                  data={data}
+                  pagination
+                  highlightOnHover
+                   
+                >
+                    
+                </DataTable>
+   </div>
 
         </>
     );

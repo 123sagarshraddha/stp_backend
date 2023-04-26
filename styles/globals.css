@@ -371,3 +371,20 @@ header .user .user-name-text {
     margin-top: 5px;
     margin-left:500px;
 }
+.page-title-box {
+    padding: 10px 1.5rem;
+    background-color: #fff;
+    border-bottom: 1px;
+    border-top: 1px;
+    margin: -23px -1.5rem 1.5rem;
+}
+.page-title-box h4 {
+    font-weight: 700;
+    font-size: 15px!important;
+    text-transform: uppercase;
+   
+}
+.page-title-box .breadcrumb {
+    background-color: transparent;
+    padding: 0;
+}

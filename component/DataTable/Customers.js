@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import DataTable from "react-data-table-component";
 import { Badge, Button } from "reactstrap";
+import customerdata from '../Json/Customers.json'
 
 
 export default function Datatable() {
@@ -83,12 +84,13 @@ export default function Datatable() {
         },
     ];
     const [data, setData] = useState([]);
-    const fetchUsers = async (page) => {
-        const response = await axios.get(`http://127.0.0.1:5500/component/Json/Customers.json`);
-        setData(response.data);
-    };
+    // const fetchUsers = async (page) => {
+    //     const response = await axios.get(`http://127.0.0.1:5500/component/Json/Customers.json`);
+    //     setData(response.data);
+    // };
     useEffect(() => {
-        fetchUsers(1); // fetch page 1 of users
+        setData(customerdata)
+        // fetchUsers(1); // fetch page 1 of users
     }, []);
     return (
         <>

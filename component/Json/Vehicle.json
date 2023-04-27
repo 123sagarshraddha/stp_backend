@@ -23,5 +23,17 @@
         "Vehicle_type":"two wheeler ",
         "Vehicle_number":"HR-26-AK-0728"
         
+    },
+    {
+        "Vehicle_id":"v005",
+        "Vehicle_name":"Truck ",
+        "Vehicle_type":"two wheeler ",
+        "Vehicle_number":"DL­5C­ A­3195"
+    },
+    {
+        "Vehicle_id":"v006",
+        "Vehicle_name":"Truck ",
+        "Vehicle_type":"two wheeler ",
+        "Vehicle_number":"DL­5C­ A­3195"
     }
 ]

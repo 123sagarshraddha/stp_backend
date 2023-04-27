@@ -49,5 +49,15 @@
         "Order_date":"05/05//2023",
         "Delivery_date":"10/05/2023",
         " Payment_status":"Panding"
+    },
+    {
+        "order_id":"6",
+        "Customer_id":"06",
+        "Patner_id":"p06",
+        "Item_id":"i006",
+        "Quantity":"55",
+        "Order_date":"05/04//2023",
+        "Delivery_date":"10/04/2023",
+        " Payment_status":"Panding"
     }
 ]

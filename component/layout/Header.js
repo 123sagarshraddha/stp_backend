@@ -3,7 +3,6 @@ import React from 'react'
 import svg from '../../assets/images/us.svg';
 import profile from '../../assets/images/profile.jpeg'
 import { Icon } from '@iconify/react';
-import { Input } from 'reactstrap';
 
 export default function header() {
     
@@ -77,7 +76,8 @@ export default function header() {
                             </span>
                         </li>
                         <div className="user ms-sm-3 position-relative">
-                            <button type="button" className="UserBtn btn btn-link">
+                            <button type="button" className="UserBtn btn btn-link" >
+                              
                                 <Image src={profile} alt='profile' width="32" height="32" className="rounded-circle" style={{ color: "transparent" }} />
                                 <span className="text-start ms-xl-2">
                                     <span className=" d-xl-inline-block ms-1 fw-500 user-name-text"> Sagar Shraddha
@@ -87,6 +87,7 @@ export default function header() {
                                 </span>
                             </button>
                         </div>
+                     
                     </div>
                 </div>
                

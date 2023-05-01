@@ -1,14 +1,21 @@
 import { Icon } from "@iconify/react";
-import axios from "axios";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import DataTable from "react-data-table-component";
-import { Badge, Button } from "reactstrap";
+import { Button } from "reactstrap";
 import admindata from '../Json/Admin.json'
 
 
 export default function Datatable() {
     const router = useRouter();
+    const handleDelete=(id)=>{
+        var index=data.map(function(e){
+            return e.id
+        }).indexOf(id)
+
+        data.splice(index,1);
+    }
+   
     // console.log("data",admindata)
 
       const columns = [
@@ -33,15 +40,13 @@ export default function Datatable() {
             selector: "phone_no",
             sortable: true
         },
+        
 
 
         {
             name: <div className="justify-content-center d-flex w-100">Status </div>,
-            selector: (row) => (
-                <>
-                    <Badge className="bg-success fw-400">status</Badge>
-                </>
-            ),
+            
+            selector:"status",
             style: {
                 justifyContent: "center",
             },
@@ -64,7 +69,7 @@ export default function Datatable() {
                             height={"18px"}
                         />
                     </Button>
-                    <Button size="sm" color="danger" className="m-1">
+                    <Button onClick={()=>handleDelete(data.id)} size="sm" color="danger" className="m-1">
 
 
                     <Icon
@@ -94,6 +99,8 @@ export default function Datatable() {
         // fetchUsers(1)
         setData(admindata)
     }, []);
+   
+
     return (
         <>
 

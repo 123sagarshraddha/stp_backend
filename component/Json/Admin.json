@@ -21,7 +21,7 @@
     "username": "Amar",
     "email": "Lew@alysha.tv",
     "phone_no":"1234567891",
-    "status":"Active"
+    "status":"Inactive"
   },
   {
    
@@ -37,7 +37,7 @@
     "username": "kevin",
     "email": "Lew@alysha.tv",
     "phone_no":"1234567891",
-    "status":"Active"
+    "status":"Delete"
   },
   {
     
@@ -53,7 +53,7 @@
     "username": "Varsha",
     "email": "Lew@alysha.tv",
     "phone_no":"1234567891",
-    "status":"Active"
+    "status":"Inactive"
   },
   {
     
@@ -69,7 +69,7 @@
     "username": "Hitesh",
     "email": "Lew@alysha.tv",
     "phone_no":"1234567891",
-    "status":"Active"
+    "status":"Delete"
   }
   
   ]

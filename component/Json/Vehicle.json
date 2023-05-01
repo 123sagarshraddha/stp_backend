@@ -3,37 +3,43 @@
         "Vehicle_id":"v001",
         "Vehicle_name":"Taxi ",
         "Vehicle_type":"four wheeler ",
-        "Vehicle_number":"DL­5CA­3195"
+        "Vehicle_number":"DL­5CA­3195",
+        "status":"Active"
     },
     {
         "Vehicle_id":"v002",
         "Vehicle_name":"Bike ",
         "Vehicle_type":"two wheeler ",
-        "Vehicle_number":"gj-26-AK-0728"
+        "Vehicle_number":"gj-26-AK-0728",
+        "status":"Inactive"
     },
     {
         "Vehicle_id":"v003",
         "Vehicle_name":"Truck ",
         "Vehicle_type":"two wheeler ",
-        "Vehicle_number":"DL­5C­ A­3195"
+        "Vehicle_number":"DL­5C­ A­3195",
+        "status":"Delete"
     },
     {
         "Vehicle_id":"v004",
         "Vehicle_name":"Truck ",
         "Vehicle_type":"two wheeler ",
-        "Vehicle_number":"HR-26-AK-0728"
+        "Vehicle_number":"HR-26-AK-0728",
+        "status":"Active"
         
     },
     {
         "Vehicle_id":"v005",
         "Vehicle_name":"Truck ",
         "Vehicle_type":"two wheeler ",
-        "Vehicle_number":"DL­5C­ A­3195"
+        "Vehicle_number":"DL­5C­ A­3195",
+        "status":"Inactive"
     },
     {
         "Vehicle_id":"v006",
         "Vehicle_name":"Truck ",
         "Vehicle_type":"two wheeler ",
-        "Vehicle_number":"DL­5C­ A­3195"
+        "Vehicle_number":"DL­5C­ A­3195",
+        "status":"Delete"
     }
 ]

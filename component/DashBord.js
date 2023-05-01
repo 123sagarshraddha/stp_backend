@@ -1,7 +1,49 @@
 
 import { Icon } from "@iconify/react";
 import Link from "next/link";
+import { Card, CardBody } from "reactstrap";
+import {
+    ResponsiveContainer, LineChart, Line, XAxis, YAxis, CartesianGrid, Legend, Tooltip, BarChart, Bar, AreaChart, Area,
+    Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis
+} from "recharts";
 
+const pdata = [
+    {
+        name: "Ahmedabad",
+        orders: "26",
+        Quantity: "50",
+    },
+    {
+        name: "Himmatnagar",
+        orders: "34",
+        Quantity: "70"
+    },
+    {
+        name: "Idar",
+        orders: "80",
+        Quantity: "26"
+    },
+    {
+        name: "Baroda",
+        orders: "20",
+        Quantity: "78"
+    },
+    {
+        name: "Modasa",
+        orders: "36",
+        Quantity: "45"
+    },
+    {
+        name: "Gandhinagar",
+        orders: "60",
+        Quantity: "90"
+    },
+    {
+        name: "Chiloda",
+        orders: "89",
+        Quantity: "29"
+    }
+];
 
 
 
@@ -12,10 +54,10 @@ export default function DashBord({ children }) {
 
             <div className="container-fluid">
                 <div className="Dashboard row">
-                    <div className="col">
+                    <div >
                         <div className="h-100">
                             <div className="mb-3 pb-1 row">
-                                <div className="col-sm-12">
+                                <div >
                                     <div className="d-flex align-items-lg-center flex-lg-row flex-column">
                                         <div className="flex-grow-1">
                                             <h4 className="fs-16 mb-1">
@@ -48,7 +90,7 @@ export default function DashBord({ children }) {
                                                 </div>
                                                 <div className="avatar-sm flex-shrink-0">
                                                     <span className="bg-soft-success avatar-title rounded fs-3">
-                                                    <Icon icon="solar:chat-round-money-bold-duotone" color="#495057" width="25" height="25" />
+                                                        <Icon icon="solar:chat-round-money-bold-duotone" color="#495057" width="25" height="25" />
 
                                                     </span>
                                                 </div>
@@ -74,8 +116,8 @@ export default function DashBord({ children }) {
                                                 </div>
                                                 <div className="avatar-sm flex-shrink-0">
                                                     <span className="bg-soft-info avatar-title rounded fs-3">
-                                                    <Icon icon="ph:bag-duotone" color="#495057" width="25" height="25" />
-                                                </span>
+                                                        <Icon icon="ph:bag-duotone" color="#495057" width="25" height="25" />
+                                                    </span>
                                                 </div>
                                             </div>
                                         </div>
@@ -99,7 +141,7 @@ export default function DashBord({ children }) {
                                                 </div>
                                                 <div className="avatar-sm flex-shrink-0">
                                                     <span className="bg-soft-info avatar-title rounded fs-3">
-                                                    <Icon icon="healthicons:ui-user-profile" color="#495057" width="25" height="25" />
+                                                        <Icon icon="healthicons:ui-user-profile" color="#495057" width="25" height="25" />
 
                                                     </span>
                                                 </div>
@@ -126,7 +168,7 @@ export default function DashBord({ children }) {
                                                 <div className="avatar-sm flex-shrink-0">
                                                     <span className="bg-soft-info avatar-title rounded fs-3">
 
-                                                    <Icon icon="solar:chat-round-money-bold-duotone" color="#495057" width="25" height="25" />
+                                                        <Icon icon="solar:chat-round-money-bold-duotone" color="#495057" width="25" height="25" />
 
 
                                                     </span>
@@ -147,7 +189,91 @@ export default function DashBord({ children }) {
 
             </div>
 
+            <div >
+                <Card>
+                    <CardBody>
+                        <h1 className="chart-heading">Line Chart</h1>
+                        <ResponsiveContainer aspect={3} width="100%">
+                            <LineChart data={pdata} width={500} height={300} >
+                                <CartesianGrid strokeDasharray="3 3" />
+                                <XAxis dataKey="name" interval={'preserveStartEnd'} tickFormatter={(value) => value + " City "} />
+                                <Tooltip contentStyle={{ backgroundColor: "lightblue", borderRadius: "10px" ,fontFamily: "sans-serif", fontSize: "15px"}} />
+                                <YAxis />
+                                <Legend />
+                                <Line dataKey="orders" stroke="green" activeDot={{ r: 5 }} type={"monotone"} />
+                                <Line dataKey="Quantity" stroke="blue" activeDot={{ r: 5 }} type={"natural"} />
+                            </LineChart>
+                        </ResponsiveContainer>
 
+                    </CardBody>
+
+                    <CardBody>
+                        <h1 className="chart-heading">Area Chart</h1>
+                        <ResponsiveContainer aspect={3} width="100%" height="100%">
+                            <AreaChart
+                                data={pdata}
+                                width={500}
+
+                            >
+                                <CartesianGrid strokeDasharray="3 3" />
+                                <XAxis dataKey="name" interval={'preserveStartEnd'} tickFormatter={(value) => value + " City "} />
+                                <Tooltip contentStyle={{ backgroundColor: "lightblue", borderRadius: "10px" ,fontFamily: "sans-serif", fontSize: "15px"}} />
+                                <YAxis />
+                                <Legend />
+                                < Area dataKey="orders" stroke="green" activeDot={{ r: 5 }} type={"monotone"} />
+                                <Area dataKey="Quantity" stroke="blue" activeDot={{ r: 5 }} type={"natural"} />
+                            </AreaChart>
+                        </ResponsiveContainer>
+                    </CardBody>
+
+
+                    <CardBody>
+                        <h1 className="chart-heading">Bar Chart</h1>
+                        <ResponsiveContainer aspect={3} width="100%" height="100%">
+                            <BarChart
+                                data={pdata}
+                                width={500}
+
+                            >
+                                <CartesianGrid strokeDasharray="3 3" />
+                                <XAxis dataKey="name" interval={'preserveStartEnd'} tickFormatter={(value) => value + " City "} />
+                                <Tooltip contentStyle={{ backgroundColor: "lightblue", borderRadius: "10px", fontFamily: "sans-serif", fontSize: "15px" }} />
+                                <YAxis />
+                                <Legend />
+                                <Bar dataKey="orders" fill=" #8884d8"  />
+                                <Bar dataKey="Quantity" fill="#82ca9d"  />
+                            </BarChart>
+                        </ResponsiveContainer>
+                    </CardBody>
+
+
+
+
+                    <CardBody>
+                        <h1 className="chart-heading">Radar Chart</h1>
+
+                        <ResponsiveContainer aspect={3} width="100%" height="100%">
+                            <RadarChart cx="50%" cy="50%" outerRadius="80%" data={pdata}>
+                                <PolarGrid />
+                                <Tooltip contentStyle={{ backgroundColor: "lightblue", borderRadius: "10px", fontFamily: "sans-serif", fontSize: "15px" }} />
+
+                                <PolarAngleAxis dataKey="name" />
+                                <PolarRadiusAxis />
+                                <Radar name="orders" dataKey="orders" stroke="green" fill="#8884d8" fillOpacity={0.6} />
+                            </RadarChart>
+                        </ResponsiveContainer>
+                    </CardBody>
+                </Card>
+
+
+
+
+
+
+
+
+
+            </div>
         </>
     )
 }

@@ -1,38 +1,52 @@
 [
     {
+        "id":1,
+         "partner type":"driver",
+         "email":"Kevin@gmail.com",
+         "phone_no":"90909090909",
+         "address":"Baroda",
+         "service provider":"delivery",
+         "status":"Active"
+
+    },
+    {
         "id":2,
          "partner type":"driver",
-         "email":"abc@gmail.com",
-         "phone_no":"90909090909",
-         "address":"baroda ",
-         "service provider":"delivery"
+         "email":"Darshit@gmail.com",
+         "phone_no":"78749090909",
+         "address":"Vadodara",
+         "service provider":"delivery",
+         "status":"Inactive"
 
     },
     {
         "id":3,
          "partner type":"driver",
-         "email":"abc@gmail.com",
-         "phone_no":"90909090909",
-         "address":"baroda ",
-         "service provider":"delivery"
+         "email":"ved@gmail.com",
+         "phone_no":"78909090909",
+         "address":"Modasa",
+         "service provider":"delivery",
+         "status":"Delete"
 
     },
     {
         "id":4,
          "partner type":"driver",
-         "email":"abc@gmail.com",
-         "phone_no":"90909090909",
-         "address":"baroda ",
-         "service provider":"delivery"
+         "email":"Vivek@gmail.com",
+         "phone_no":"98789090909",
+         "address":"Ahmedabad ",
+         "service provider":"delivery",
+         "status":"Inactive"
 
     },
     {
         "id":5,
          "partner type":"driver",
-         "email":"abc@gmail.com",
-         "phone_no":"90909090909",
-         "address":"baroda ",
-         "service provider":"delivery"
+         "email":"amar@gmail.com",
+         "phone_no":"79849090909",
+         "address":"Himatnagar ",
+         "service provider":"delivery",
+         "status":"Active"
 
     }
 ]

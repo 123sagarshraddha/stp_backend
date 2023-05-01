@@ -25,15 +25,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/order": [
+    "/dashbord": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/order.js"
-    ],
-    "/vehicle": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/vehicle.js"
+      "static/chunks/pages/dashbord.js"
     ]
   },
   "ampFirstPages": []

@@ -7,7 +7,8 @@
         "Quantity":"93",
         "Order_date":"22/04//2023",
         "Delivery_date":"28/04/2023",
-        " Payment_status":"Panding"
+        " Payment_status":"Panding",
+        "status":"Active"
     },
     {
         "order_id":"2",
@@ -17,7 +18,8 @@
         "Quantity":"9",
         "Order_date":"24/04//2023",
         "Delivery_date":"30/04/2023",
-        " Payment_status":"Sccessfull"
+        " Payment_status":"Sccessfull",
+        "status":"Inactive"
 
     },
     {
@@ -28,7 +30,8 @@
         "Quantity":"10",
         "Order_date":"23/04//2023",
         "Delivery_date":"29/04/2023",
-        " Payment_status":"Panding"
+        " Payment_status":"Panding",
+        "status":"Delete"
     },
     {
         "order_id":"4",
@@ -38,7 +41,8 @@
         "Quantity":"10",
         "Order_date":"01/05//2023",
         "Delivery_date":"06/05/2023",
-        " Payment_status":"Succesfull"
+        " Payment_status":"Succesfull",
+        "status":"Active"
     },
     {
         "order_id":"5",
@@ -48,7 +52,8 @@
         "Quantity":"45",
         "Order_date":"05/05//2023",
         "Delivery_date":"10/05/2023",
-        " Payment_status":"Panding"
+        " Payment_status":"Panding",
+        "status":"Inactive"
     },
     {
         "order_id":"6",
@@ -58,6 +63,7 @@
         "Quantity":"55",
         "Order_date":"05/04//2023",
         "Delivery_date":"10/04/2023",
-        " Payment_status":"Panding"
+        " Payment_status":"Sccessfull",
+        "status":"Delete"
     }
 ]

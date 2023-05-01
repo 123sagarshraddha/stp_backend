@@ -5,10 +5,8 @@
         "lastname":"Shraddha",
         "email":"sagar@123.com",
         "phone_no":"9327499332",
-        
-        "address":"Near railway station , Himmatnagr , gujarat",
         "location":"Himmatnagar",
-        "status":"active"
+        "status":"Delete"
     },
     {
         "id":2,
@@ -16,10 +14,8 @@
         "lastname":"amar",
         "email":"amar@123.com",
         "phone_no":"8587499332",
-       
-        "address":"Near Post Office ,Mahavirnagar, gujarat",
         "location":"Mahavirnagar",
-        "status":"inactive"
+        "status":"Active"
     },
     {
         "id":3,
@@ -27,10 +23,8 @@
         "lastname":"darsh",
         "email":"darsh@123.com",
         "phone_no":"7656499332",
-      
-        "address":"Near Himaliya mall  , vastrapur , gujarat",
         "location":"vastrapur",
-        "status":"active"
+        "status":"Inactive"
     },
     {
         "id":4,
@@ -38,10 +32,8 @@
         "lastname":"Darshit",
         "email":"Darshit@123.com",
         "phone_no":"6567499332",
-     
-        "address":"Manjalpur , baroda, gujarat",
         "location":"Baroda",
-        "status":"active"
+        "status":"Active"
     },
     {
         "id":5,
@@ -49,10 +41,8 @@
         "lastname":"Shraddha",
         "email":"sagar@123.com",
         "phone_no":"9327499332",
-      
-        "address":"Near railway station , Himmatnagr , gujarat",
         "location":"Himmatnagar",
-        "status":"active"
+        "status":"Delete"
     },
     {
         "id":6,
@@ -60,10 +50,8 @@
         "lastname":"Shraddha",
         "email":"sagar@123.com",
         "phone_no":"9327499332",
-      
-        "address":"Near railway station , Himmatnagr , gujarat",
         "location":"Himmatnagar",
-        "status":"active"
+        "status":"Active"
     }
     
 ]

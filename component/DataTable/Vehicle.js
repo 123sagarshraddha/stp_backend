@@ -35,11 +35,7 @@ export default function Vehicle() {
 
         {
             name: <div className="justify-content-center d-flex w-100">Status </div>,
-            selector: (row) => (
-                <>
-                    <Badge className="bg-success fw-400">status</Badge>
-                </>
-            ),
+            selector:"status",
             style: {
                 justifyContent: "center",
             },

@@ -1,5 +1,6 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
     font-family: sans-serif;
     padding: 0;
@@ -387,4 +388,10 @@ header .user .user-name-text {
 .page-title-box .breadcrumb {
     background-color: transparent;
     padding: 0;
+}
+.chart-heading{
+    color: #084298;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
 }
